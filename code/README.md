@@ -21,7 +21,7 @@
 ## Instruction to reproduce the experimental results in the survey paper
 1. Download the EA technique codes from the list above.
 2. For some models, it requires transforming the dataset format. Use the code *transform_data.ipynb* to transform the dataset.
-3. To get the result for Experiment 2 and Experiment 3, before running *code_experiment_2.ipynb* and *code_experiment_3.ipynb*, you need to export the final embeddings for each technique. To do so, you can use the save function from numpy library. For example:
+3. To get the result for Experiment 2 and Experiment 3, before running *code_experiment_2.ipynb* and *code_experiment_3.ipynb*, you need to export the final embeddings for each technique. To do so, you can use the save function from numpy library as follows:
 ```
 #numpy.save(filename, output_embeddings_variable)
 numpy.save('output_embeds.npy', outvec)
