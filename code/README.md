@@ -19,7 +19,7 @@
 * NMN: https://github.com/StephanieWyt/NMN
 
 ## Directory structure
-<code>
+<pre><code>
 code/
 ├── output_embeddings/        --> (A folder for storing the resulting embeddings of an EA technique)   
 ├── resource/                 
@@ -28,18 +28,18 @@ code/
 ├── experiment_2.py           --> (The code for running experiment 2 in the survey paper)
 ├── experiment_3.py           --> (The code for running experiment 3 in the survey paper)
 └── transform_data.py         --> (The code for transforming KG into the data structured as required by an EA technique)
-<\code>
+</code></pre>
 
 ## Instruction to reproduce the experimental results in the survey paper
 1. Download the EA technique codes from the list above.
 2. For some models, it requires transforming the dataset format. Use the following command to transform the dataset.
-   ```
+   <pre><code>
    python transform_data.py --seed <Seed Ratio> --dataset <Dataset Folder>
    for example:
    python transform_data.py --seed 30 --dataset DY-NB
-   ```
+   </code></pre>
 3. To get the result for Experiment 2 and Experiment 3, before running *experiment_2.py* and *experiment_3.py*, you need to export the final embeddings for each technique. To do so, you can use the save function from numpy library as follows:
-   <code>
+   <pre><code>
    [sample from file train.py in GCN-Align]
    ...
    # Testing
@@ -47,19 +47,19 @@ code/
    feed_dict_se = construct_feed_dict(1.0, support, ph_se)
    vec_ae = sess.run(model_ae.outputs, feed_dict=feed_dict_ae)
    vec_se = sess.run(model_se.outputs, feed_dict=feed_dict_se)
-   <b>np.save('./output_embeddings/output_embeds.npy', vec_se)<\b>  <-- add this line to export the embeddings
+   <b>np.save('./output_embeddings/output_embeds.npy', vec_se)</b>  <-- add this line to export the embeddings
    ...
-   <\code>
+   </code></pre>
 4. To run the *experiment_2.py* and *experiment_3.py*, please use the following command:
    * Experiment 2
-     <code>
+     <pre><code>
      python experiment_2.py --seed <Seed Ratio> --dataset <Dataset Folder>
      for example:
-     <b>python experiment_2.py --seed 30 --dataset DY-NB<\b>
-     <\code>
+     <b>python experiment_2.py --seed 30 --dataset DY-NB</b>
+     </code></pre>
    * Experiment 3
-     <code>
+     <pre><code>
      python experiment_3.py --seed <Seed Ratio> --dataset <Dataset Folder>
      for example:
-     <b>python experiment_3.py --seed 30 --dataset DY-NB<\b>
-     <\code>
+     <b>python experiment_3.py --seed 30 --dataset DY-NB</b>
+     </code></pre>
