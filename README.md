@@ -6,11 +6,11 @@ Note that many of the compared techniques use manually created seed attribute/re
 
 1. List all candidate predicate alignments by extracting all pairs of predicates from two KGs.
 2. To compute the predicate similarity, we use `SequenceMatcher` from `difflib` in `Python`. Below is the sample instruction to compute predicate similarity using `SequenceMatcher`: 
-   a. Install python-Levenshtein
+   * Install python-Levenshtein
       ```
       pip install python-Levenshtein
       ```
-   b. Compute the similarity of all possible predicate pairs between two KGs. To compute the similarity, you can use the following command:
+   * Compute the similarity of all possible predicate pairs between two KGs. To compute the similarity, you can use the following command:
       ```
       import difflib
       ...
