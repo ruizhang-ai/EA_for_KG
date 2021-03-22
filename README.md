@@ -7,12 +7,29 @@
 This repository contains the following contents:
 ```
 /
-├── DWY-NB/     --> (The benchmark datasets folder)
-|   ├── DW-NB   --> (The DW-NB dataset. It contains a KG-pair of DBpedia and Wikidata)
-|   └── DY-NB   --> (The DY-NB dataset. It contains a KG-pair of DBpedia and YAGO)
-├── code/       --> (A folder containing source codes used for the experiments)   
-├── LICENCE     --> (The licence file)
-└── README.md   --> (The readme file)
+├── DWY-NB/                 --> (The benchmark datasets folder)
+|   ├── DW-NB               --> (The DW-NB dataset. It contains a KG-pair of DBpedia and Wikidata)
+|   |   ├── dbp_wd.ttl      --> ()
+|   |   ├── mapping_wd      --> ()
+|   |   ├── seed_10.ttl     --> ()
+|   |   ├── seed_20.ttl     --> ()
+|   |   ├── seed_30.ttl     --> ()
+|   |   ├── seed_40.ttl     --> ()
+|   |   ├── seed_50.ttl     --> ()
+|   |   └── wd.ttl          --> ()
+|   └── DY-NB               --> (The DY-NB dataset. It contains a KG-pair of DBpedia and YAGO)
+|   |   ├── dbp_yago.ttl    --> ()
+|   |   ├── mapping_yago    --> ()
+|   |   ├── seed_10.ttl     --> ()
+|   |   ├── seed_20.ttl     --> ()
+|   |   ├── seed_30.ttl     --> ()
+|   |   ├── seed_40.ttl     --> ()
+|   |   ├── seed_50.ttl     --> ()
+|   |   └── yago.ttl        --> ()
+
+├── code/                   --> (A folder containing source codes used for the experiments)   
+├── LICENCE                 --> (The licence file)
+└── README.md               --> (The readme file)
 ```
 
 ## Citation
