@@ -28,7 +28,7 @@ if __name__ == "__main__":
 	emb = np.load('./output_embeddings/output_embeds.npy') # load embeddings
 	# load entity id
 	dbp_id_ent = dict()
-	with open('./transformed_data/ent_ids_2', 'r') as f:
+	with open('./converted_data/ent_ids_2', 'r') as f:
 		for line in f.readlines():
 			line = line.rstrip().split('\t')
 			idx = int(line[0])

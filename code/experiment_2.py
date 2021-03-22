@@ -39,8 +39,8 @@ if __name__ == "__main__":
 
 
 	### Load vocab ###
-	kb1_vocab_filename = './transformed_data/ent_ids_1'
-	kb2_vocab_filename = './transformed_data/ent_ids_2'
+	kb1_vocab_filename = './converted_data/ent_ids_1'
+	kb2_vocab_filename = './converted_data/ent_ids_2'
 	kb1_id2ent, kb1_ent2id, kb1_ids = get_vocab(kb1_vocab_filename)
 	kb2_id2ent, kb2_ent2id, kb2_ids = get_vocab(kb2_vocab_filename)
 
@@ -52,7 +52,7 @@ if __name__ == "__main__":
 	se_kb2_emb = np.take(all_emb, kb2_ids, axis=0)
 
 	### Compute confidence ###
-	fmap = open('./transformed_data/ref_ent_ids', 'r')
+	fmap = open('./converted_data/ref_ent_ids', 'r')
 	confidence_list = list()
 	for line in fmap:
 		line_split = line.rstrip().split('\t')

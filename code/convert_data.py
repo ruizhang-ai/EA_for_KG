@@ -93,20 +93,20 @@ if __name__ == "__main__":
 	
 	### Generate "ENT_IDS" ###
 	inv_kb2_ent_ids = {v: k for k, v in kb2_ent_ids.items()}
-	fw = open('./transformed_data/ent_ids_1', 'w')
+	fw = open('./converted_data/ent_ids_1', 'w')
 	for e in sorted(inv_kb2_ent_ids):
 		fw.write(str(e)+'\t'+str(inv_kb2_ent_ids[e])+'\n')
 	fw.close()
 	
 	inv_dbp_ent_ids = {v: k for k, v in dbp_ent_ids.items()}
-	fw = open('./transformed_data/ent_ids_2', 'w')
+	fw = open('./converted_data/ent_ids_2', 'w')
 	for e in sorted(inv_dbp_ent_ids):
 		fw.write(str(e)+'\t'+str(inv_dbp_ent_ids[e])+'\n')
 	fw.close()
 	
 	
 	### Generate "REF_ENT_IDS" ###
-	seeds_file = open('./transformed_data/ref_ent_ids', 'w')
+	seeds_file = open('./converted_data/ref_ent_ids', 'w')
 	for s_triple in seed_graph:
 		s_s, s_p, s_o = s_triple
 		seeds_file.write(str(kb2_ent_ids[str(s_o)])+'\t'+str(dbp_ent_ids[str(s_s)])+'\n')
@@ -120,7 +120,7 @@ if __name__ == "__main__":
 	kb2_rel_ids = getRelDict(kb2_graph)
 	dbp_rel_ids = getRelDict(dbp_graph)
 	
-	fw = open('./transformed_data/triples_1', 'w')
+	fw = open('./converted_data/triples_1', 'w')
 	for triple in kb2_graph:
 		s,p,o = triple	
 		if isinstance(o, rdflib.URIRef):
@@ -130,7 +130,7 @@ if __name__ == "__main__":
 				continue
 	fw.close()
 		
-	fw = open('./transformed_data/triples_2', 'w')
+	fw = open('./converted_data/triples_2', 'w')
 	for triple in dbp_graph:
 		s,p,o = triple	
 		if isinstance(o, rdflib.URIRef):
@@ -144,14 +144,14 @@ if __name__ == "__main__":
 	### Generate attribute data ###
 	kb2_attrs = get_attr_set(kb2_graph)
 	kb2_training_attrs = get_training_attrs(kb2_graph, kb2_attrs)
-	fw1 = open('./transformed_data/training_attrs_1', 'w')
+	fw1 = open('./converted_data/training_attrs_1', 'w')
 	for e in kb2_training_attrs:
 		fw1.write(str(e)+'\n')
 	fw1.close()
 	
 	dbp_attrs = get_attr_set(dbp_graph)
 	dbp_training_attrs = get_training_attrs(dbp_graph, dbp_attrs)
-	fw2 = open('./transformed_data/training_attrs_2', 'w')
+	fw2 = open('./converted_data/training_attrs_2', 'w')
 	for e in dbp_training_attrs:
 		fw2.write(str(e)+'\n')
 	fw2.close()
