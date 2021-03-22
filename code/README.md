@@ -35,7 +35,7 @@ code/
 2. For some models, it requires transforming the dataset format. Use the following command to transform the dataset.
    <pre><code>python transform_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
    for example:
-   python transform_data.py --seed 30 --dataset DY-NB</code></pre>
+   <b>python transform_data.py --seed 30 --dataset DY-NB</b></code></pre>
 3. Before running *experiment_2.py* and *experiment_3.py*, you need to export the final embeddings for each technique. To do so, you can use the *save* function from numpy library as follows:
    <pre><code>[The sample below is from the file <b>train.py</b> in GCN-Align]
    ...
