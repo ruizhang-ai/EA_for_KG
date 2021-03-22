@@ -8,7 +8,7 @@ code/
 │   └── dbp_ent2type.pickle   --> (A resource file containing the type of entities in the DBpedia knowledge graph)
 ├── experiment_2.py           --> (The code for running experiment 2 in the survey paper)
 ├── experiment_3.py           --> (The code for running experiment 3 in the survey paper)
-└── transform_data.py         --> (The code for transforming KGs into the data structured as required by an EA technique)
+└── convert_data.py         --> (The code for transforming KGs into the data structured as required by an EA technique)
 ```
 
 ## Below is the list the EA techniques compared in the experiments
@@ -35,9 +35,9 @@ code/
 ## Instruction to reproduce the experimental results in the survey paper
 1. Download the EA technique codes from the list above.
 2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are store in the form of triple `<subject, predicate, object>`. Some EA techniques require the input to be in a different format. To run their code, we need to convert the data from the DWY-NB into the required format. Use the following command to convert the dataset.
-   <pre><code>python transform_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
+   <pre><code>python convert_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
    for example:
-   <b>python transform_data.py --seed 30 --dataset DY-NB</b></code></pre>
+   <b>python convert_data.py --seed 30 --dataset DY-NB</b></code></pre>
 3. To run the Experiment 1 in the survey paper, please follow the command for each technique.
    <pre><code>[Below is the sample of running GCN-Align over our dataset]
    <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
