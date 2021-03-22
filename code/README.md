@@ -32,7 +32,7 @@ code/
 
 ## Instruction to reproduce the experimental results in the survey paper
 1. Download the EA technique codes from the list above.
-> Test
+> `Test`
 2. For some models, it requires transforming the dataset format. Use the following command to transform the dataset.
    ```
    python transform_data.py --seed <Seed Ratio> --dataset <Dataset Folder>
