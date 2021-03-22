@@ -1,5 +1,5 @@
 ## DWY-NB Benchmark
-**DWY-NB** is a new benchmark for entity alignment between knowledge graphs. It contains two datasets `DY-NB` (contains a KG-pair of DBpedia and YAGO) and `DW-NB` (contains a KG-pair of DBpedia and Wikidata). For more details about the benchmark, please refer to the survey paper (*A  Comprehensive  Survey on  Knowledge  Graph  EntityAlignment via Representation Learning*).
+**DWY-NB** is a new benchmark for entity alignment between knowledge graphs. This benchmark consists of two datasets; each dataset consists of a pair of KGs that can be used for the evaluation of EA techniques. We call the two datasets `DY-NB` and `DW-NB`. The two KGs of `DY-NB` are subsets of DBpedia [Auer et al., 2007] and Yago [Hoffart et al., 2013], respectively. The two KGs of `DW-NB` are subsets of DBpedia and Wikidata [Vrandecic and Krotzsch, 2014], respectively.
 
 ### Predicate alignment
 
