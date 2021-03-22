@@ -36,7 +36,7 @@ code/
    <pre><code>python transform_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
    for example:
    python transform_data.py --seed 30 --dataset DY-NB</code></pre>
-3. To get the result for Experiment 2 and Experiment 3, before running *experiment_2.py* and *experiment_3.py*, you need to export the final embeddings for each technique. To do so, you can use the save function from numpy library as follows:
+3. Before running *experiment_2.py* and *experiment_3.py*, you need to export the final embeddings for each technique. To do so, you can use the *save* function from numpy library as follows:
    <pre><code>[The sample below is from the file <b>train.py</b> in GCN-Align]
    ...
    # Testing
