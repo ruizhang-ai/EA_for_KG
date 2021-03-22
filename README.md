@@ -1,6 +1,14 @@
 ### DWY-NB Benchmark
 DWY-NB is a new benchmark for entity alignment between knowledge graphs. It contains two datasets DY-NB (contains a KG-pair of DBpedia and YAGO) and DW-NB (contains a KG-pair of DBpedia and Wikidata). For more details about the benchmark, please refer to the survey paper (*A  Comprehensive  Survey on  Knowledge  Graph  EntityAlignment via Representation Learning*).
 
+### What are in this Repository
+-- Folder DWY-NB
+-- Folder xxx
+-- File LICENSE
+-- File README.md
+
+explain each one.
+
 ### Citation
 If you use the datasets in the DWY-NB Benchmark, please credit us by citing the following papers:
 
