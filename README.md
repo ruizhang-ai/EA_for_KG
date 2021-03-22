@@ -4,12 +4,12 @@
 ### Predicate alignment
 
 ## What are in this Repository
-This directory contains the following contents:
+This repository contains the following contents:
 ```
 /
-├── DWY-NB/     --> (A folder )
-|   ├── DW-NB   --> (A folder )
-|   └── DY-NB   --> (A folder )
+├── DWY-NB/     --> (The benchmark datasets folder)
+|   ├── DW-NB   --> (The DW-NB dataset. It contains a KG-pair of DBpedia and Wikidata)
+|   └── DY-NB   --> (The DY-NB dataset. It contains a KG-pair of DBpedia and YAGO)
 ├── code/       --> (A folder containing source codes used for the experiments)   
 ├── LICENCE     --> (The licence file)
 └── README.md   --> (The readme file)
