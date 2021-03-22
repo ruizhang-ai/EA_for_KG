@@ -1,7 +1,24 @@
 ## DWY-NB Benchmark
-**DWY-NB** is a new benchmark for entity alignment between knowledge graphs. This benchmark consists of two datasets; each dataset consists of a pair of KGs that can be used for the evaluation of EA techniques. We call the two datasets DY-NB and DW-NB. The two KGs of `DY-NB` are subsets of *DBpedia [Auer et al., 2007]* and *Yago [Hoffart et al., 2013]*, respectively. The two KGs of `DW-NB` are subsets of DBpedia and *Wikidata [Vrandecic and Krotzsch, 2014]*, respectively.
+**DWY-NB** is a new benchmark for entity alignment between knowledge graphs. This benchmark consists of two datasets; each dataset consists of a pair of KGs that can be used for the evaluation of EA techniques. We call the two datasets `DY-NB` and `DW-NB`. The two KGs of `DY-NB` are subsets of *DBpedia [Auer et al., 2007]* and *Yago [Hoffart et al., 2013]*, respectively. The two KGs of `DW-NB` are subsets of DBpedia and *Wikidata [Vrandecic and Krotzsch, 2014]*, respectively.
 
 ### Predicate alignment
+Note that many of the compared techniques use manually created seed attribute/relation predicate alignments (and some of the compared techniques do not), which significantly improves the performance. To be fair for all techniques, we have aligned the predicates between KGs in DWY-NB benchmark datasets. Below is the procedure we use to aligned the predicate in the datasets.
+
+1. List all candidate predicate alignments by extracting all pairs of predicates from two KGs.
+2. To compute the predicate similarity, we use `SequenceMatcher` from `difflib` in `Python`. Below is the sample instruction to compute predicate similarity using `SequenceMatcher`: 
+   a. Install python-Levenshtein
+      ```
+      pip install python-Levenshtein
+      ```
+   b. Compute the similarity of all possible predicate pairs between two KGs. To compute the similarity, you can use the following command:
+      ```
+      import difflib
+      ...
+      pred_similarity=difflib.SequenceMatcher("predicate_1", "predicate_2").ratio()
+      ...
+3. Filter the predicate similarity (*pred_similarity*) using a certain threshold to get the candidate predicate alignments. We use the threshold of 0.80 to get high recall.
+4. Manually remove the false positive from the candidate predicate alignments.
+
 
 ## What are in this Repository
 This repository contains the following contents:
