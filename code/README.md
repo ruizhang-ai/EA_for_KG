@@ -27,7 +27,7 @@ code/
 ├── transformed_data/         --> (A folder for storing transformed data used as input for an EA technique)
 ├── experiment_2.py           --> (The code for running experiment 2 in the survey paper)
 ├── experiment_3.py           --> (The code for running experiment 3 in the survey paper)
-└── transform_data.py         --> (The code for transforming KG into the data structured as required by an EA technique)
+└── transform_data.py         --> (The code for transforming KGs into the data structured as required by an EA technique)
 ```
 
 ## Instruction to reproduce the experimental results in the survey paper
@@ -37,7 +37,7 @@ code/
    for example:
    python transform_data.py --seed 30 --dataset DY-NB</code></pre>
 3. To get the result for Experiment 2 and Experiment 3, before running *experiment_2.py* and *experiment_3.py*, you need to export the final embeddings for each technique. To do so, you can use the save function from numpy library as follows:
-   <pre><code>[sample from file train.py in GCN-Align]
+   <pre><code>[The sample below is from the file <b>train.py</b> in GCN-Align]
    ...
    # Testing
    feed_dict_ae = construct_feed_dict(ae_input, support, ph_ae)
