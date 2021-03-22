@@ -40,7 +40,7 @@ code/
    <b>python transform_data.py --seed 30 --dataset DY-NB</b></code></pre>
 3. To run the Experiment 1 in the survey paper, please follow the command for each technique.
      <pre><code>[Below is the sample of running GCN-Align over our dataset]
-     python train_kba.py --lang converted_data --seed 4500
+     <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
 4. Before running *experiment_2.py* and *experiment_3.py*, you need to export the final embeddings for each technique. To do so, you can use the *save* function from numpy library as follows:
    <pre><code>[The sample below is from the file <b>train.py</b> in GCN-Align]
    ...
@@ -62,4 +62,4 @@ code/
      <b>python experiment_3.py --seed 30 --dataset DY-NB</b></code></pre>
 6. To run the Experiment 4 in the survey paper, please follow the command for each technique.
      <pre><code>[Below is the sample of running GCN-Align over our dataset]
-     python train_kba.py --lang converted_data --seed 4500
+     <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
