@@ -8,7 +8,7 @@ This repository contains the following contents:
 ```
 /
 ├── DWY-NB/                 --> (The benchmark datasets folder)
-|   ├── DW-NB               --> (The DW-NB dataset. It contains a KG-pair of DBpedia and Wikidata)
+|   ├── DW-NB/              --> (The DW-NB dataset. It contains a KG-pair of DBpedia and Wikidata)
 |   |   ├── dbp_wd.ttl      --> (The subset of DBpedia KG)
 |   |   ├── mapping_wd      --> (The known entity alignment as testing data)
 |   |   ├── seed_10.ttl     --> (The seed entity alignment with the ratio of 10%)
@@ -17,7 +17,7 @@ This repository contains the following contents:
 |   |   ├── seed_40.ttl     --> (The seed entity alignment with the ratio of 40%)
 |   |   ├── seed_50.ttl     --> (The seed entity alignment with the ratio of 50%)
 |   |   └── wd.ttl          --> (The subset of Wikidata KG)
-|   └── DY-NB               --> (The DY-NB dataset. It contains a KG-pair of DBpedia and YAGO)
+|   └── DY-NB/              --> (The DY-NB dataset. It contains a KG-pair of DBpedia and YAGO)
 |   |   ├── dbp_yago.ttl    --> (The subset of DBpedia KG)
 |   |   ├── mapping_yago    --> (The known entity alignment as testing data)
 |   |   ├── seed_10.ttl     --> (The seed entity alignment with the ratio of 10%)
