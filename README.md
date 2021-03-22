@@ -26,7 +26,6 @@ This repository contains the following contents:
 |   |   ├── seed_40.ttl     --> (The seed entity alignment with the ratio of 40%)
 |   |   ├── seed_50.ttl     --> (The seed entity alignment with the ratio of 50%)
 |   |   └── yago.ttl        --> (The subset of YAGO KG)
-
 ├── code/                   --> (A folder containing source codes used for the experiments)   
 ├── LICENCE                 --> (The licence file)
 └── README.md               --> (The readme file)
