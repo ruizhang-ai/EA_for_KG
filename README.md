@@ -1,3 +1,6 @@
+### DWY-NB Dataset
+This dataset is a new benchmark dataset for entity alignment between knowledge graphs.
+
 ### Citation
 If you use datasets in the survey paper, please cite it as follows:
 
