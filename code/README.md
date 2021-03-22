@@ -6,9 +6,9 @@ code/
 ├── output_embeddings/        --> (A folder for storing the resulting embeddings of an EA technique)   
 ├── resource/                 
 │   └── dbp_ent2type.pickle   --> (A resource file containing the type of entities in the DBpedia knowledge graph)
+├── convert_data.py           --> (The code for transforming KGs into the data structured as required by an EA technique)
 ├── experiment_2.py           --> (The code for running experiment 2 in the survey paper)
-├── experiment_3.py           --> (The code for running experiment 3 in the survey paper)
-└── convert_data.py         --> (The code for transforming KGs into the data structured as required by an EA technique)
+└── experiment_3.py           --> (The code for running experiment 3 in the survey paper)
 ```
 
 ## Below is the list the EA techniques compared in the experiments
