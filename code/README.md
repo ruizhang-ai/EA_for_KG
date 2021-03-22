@@ -47,7 +47,7 @@ code/
    feed_dict_se = construct_feed_dict(1.0, support, ph_se)
    vec_ae = sess.run(model_ae.outputs, feed_dict=feed_dict_ae)
    vec_se = sess.run(model_se.outputs, feed_dict=feed_dict_se)
-   np.save('./output_embeddings/output_embeds.npy', vec_se)  <-- add this line to export the embeddings
+   `**`np.save('./output_embeddings/output_embeds.npy', vec_se)`**`  <-- add this line to export the embeddings
    ...
    ```
 4. To run the *experiment_2.py* and *experiment_3.py*, please use the following command:
