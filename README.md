@@ -16,8 +16,8 @@ Note that many of the compared techniques use manually created seed attribute/re
       ...
       pred_similarity=difflib.SequenceMatcher("predicate_1", "predicate_2").ratio()
       ...
-3. Filter the predicate similarity (*pred_similarity*) using a certain threshold to get the candidate predicate alignments. We use the threshold of 0.80 to get high recall.
-4. Manually remove the false positive from the candidate predicate alignments.
+3. Filter the predicate similarity (*pred_similarity*) using a certain threshold to get the candidate predicate alignments. We use the threshold of 0.80 to get a high recall.
+4. Manually remove the false-positives from the candidate predicate alignments.
 
 
 ## What are in this Repository
