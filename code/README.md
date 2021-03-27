@@ -51,7 +51,7 @@ code/
    vec_se = sess.run(model_se.outputs, feed_dict=feed_dict_se)
    <b>np.save('./output_embeddings/output_embeds.npy', vec_se)</b>  <-- add this line to export the embeddings
    ...</code></pre>
-5. To run the `Experiment 2` and `Experiment 3`, please use the following command:
+5. To run `Experiment 2` and `Experiment 3`, use the following command:
    * Experiment 2
      <pre><code>python experiment_2.py --seed [Seed Ratio] --dataset [Dataset Folder]
      for example:
@@ -60,6 +60,6 @@ code/
      <pre><code>python experiment_3.py --seed [Seed Ratio] --dataset [Dataset Folder]
      for example:
      <b>python experiment_3.py --seed 30 --dataset DY-NB</b></code></pre>
-6. To run the `Experiment 4` in the survey paper, please follow the command for each technique.
+6. To run `Experiment 4` in the survey paper, follow the command for each technique.
    <pre><code>[Below is the sample of running GCN-Align over our dataset]
    <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
