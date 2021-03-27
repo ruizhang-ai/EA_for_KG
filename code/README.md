@@ -32,14 +32,14 @@ code/
 * NMN: https://github.com/StephanieWyt/NMN
 
 
-## Instruction to reproduce the experimental results in the survey paper
-1. Download the EA technique codes from the list above.
-2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are store in the form of triple `<subject, predicate, object>`. Some EA techniques require the input to be in a different format. To run their code, we need to convert the data from the DWY-NB into the required format. Use the following command to convert the dataset.
+## Instruction to reproduce the experimental results in the paper [Zhang et al. 2021]
+1. Download the EA technique code from the list above.
+2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are store in the form of triple `<subject, predicate, object>`. Some EA techniques require the input to be in different formats. To run their code, we need to convert the data from DWY-NB into the formats of those techniques. Use the following command to convert the dataset.
    <pre><code>python convert_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
    for example:
    <b>python convert_data.py --seed 30 --dataset DY-NB</b></code></pre>
-3. To run the `Experiment 1` in the survey paper, please follow the command for each technique.
-   <pre><code>[Below is the sample of running GCN-Align over our dataset]
+3. To run `Experiment 1` in the survey paper, follow the command for each technique.
+   <pre><code>[Below is an example of running GCN-Align on our dataset]
    <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
 4. Before running `Experiment 2` and `Experiment 3`, you need to export the final embeddings for each technique. To do so, you can use the *save* function from numpy library as follows:
    <pre><code>[The sample below is from the file <b>train.py</b> in GCN-Align]
