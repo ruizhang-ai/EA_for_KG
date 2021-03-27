@@ -33,11 +33,16 @@ code/
 
 
 ## Instruction to reproduce the experimental results in the paper [Zhang et al. 2021]
-1. Download the EA technique code from the list above and the benchmark DYW-NB. Put the code and the data file in ... [bayu]
+1. Download the EA technique code from the list above and the benchmark DYW-NB. Put the code and the data file in this folder. For example:
+   <pre><code>git clone https://github.com/1049451037/GCN-Align.git</code></pre>
 2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are store in the form of triple `<subject, predicate, object>`. Some EA techniques require the input to be in different formats. To run their code, we need to convert the data from DWY-NB into the formats of those techniques. Use the following command to convert the dataset.
    <pre><code>python convert_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
    for example:
    <b>python convert_data.py --seed 30 --dataset DY-NB</b></code></pre>
+   
+   After converting the data, you can copy them to the folder "data" in the directory of the EA technique downloaded in no 1.
+   <pre><code>cp -r converted_data/ GCN-Align/data/</code></pre>
+   
 3. To run `Experiment 1` in the paper, follow the command for each technique.
    <pre><code>[Below is an example of running GCN-Align on our dataset]
    <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
@@ -49,7 +54,7 @@ code/
    feed_dict_se = construct_feed_dict(1.0, support, ph_se)
    vec_ae = sess.run(model_ae.outputs, feed_dict=feed_dict_ae)
    vec_se = sess.run(model_se.outputs, feed_dict=feed_dict_se)
-   <b>np.save('./output_embeddings/output_embeds.npy', vec_se)</b>  <-- add this line to export the embeddings
+   <b>np.save('../output_embeddings/output_embeds.npy', vec_se)</b>  <-- add this line to export the embeddings
    ...</code></pre>
 5. To run `Experiment 2` and `Experiment 3`, use the following command:
    * Experiment 2
