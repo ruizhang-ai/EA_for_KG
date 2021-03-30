@@ -1,5 +1,5 @@
 ## DWY-NB Benchmark
-**DWY-NB** is a benchmark for entity alignment between knowledge graphs. This benchmark consists of two datasets `DY-NB` and `DW-NB`; each dataset consists of a pair of KGs that can be used for the evaluation of EA techniques. The two KGs of `DY-NB` are subsets of *DBpedia [Auer et al., 2007]* and *Yago [Hoffart et al., 2013]*, respectively. The two KGs of `DW-NB` are subsets of DBpedia and *Wikidata [Vrandecic and Krotzsch, 2014]*, respectively. More about this benchmark such as the background and how it is generated are described in [].
+**DWY-NB** is a benchmark for entity alignment between knowledge graphs. This benchmark consists of two datasets `DY-NB` and `DW-NB`; each dataset consists of a pair of KGs that can be used for the evaluation of EA techniques. The two KGs of `DY-NB` are subsets of *DBpedia [Auer et al., 2007]* and *Yago [Hoffart et al., 2013]*, respectively. The two KGs of `DW-NB` are subsets of DBpedia and *Wikidata [Vrandecic and Krotzsch, 2014]*, respectively. More about this benchmark such as the background and how it is generated are described in [Rui Zhang, Bayu Distiawan Trisedya, Miao Li, Yong Jiang and Jianzhong Qi. "A  Comprehensive  Survey  on  Knowledge  Graph  EntityAlignment via Representation Learning". arXiv:2103.15059, https://arxiv.org/abs/2103.15059, 2021].
 
 ### Notes on predicate alignment in the benchmark
 Note that many techniques use manually created seed attribute/relation predicate alignments which positively impacts the performance, while some other techniques do not. To be able to isolate the effect of the factor being evaluated for a certain experiment in our experimental study (e.g., the effect of seed entity alignments proportions, the effect of attribute triples, etc.) reported in [Zhang et al. 2021], we have aligned the predicates between the KGs in those experiments so that predicate alignments have the same effect on the performance of all the techniques no matter whether they take some measures to align predicates. If we did not align the predicates in our data, then the techniques that do not take measures to align predicates might have poorer performance due to unaligned predicates rather than due to the effect of the factor being evaluated. Below is the procedure we use to aligned the predicate in the datasets.
@@ -52,7 +52,7 @@ This repository contains the following contents:
 If you use the datasets in the DWY-NB Benchmark, please credit us by citing the following papers:
 
 * [Trisedya et al. 2019] *Bayu Distiawan Trisedya, Jianzhong Qi, and Rui Zhang. "Entity alignment between knowledge graphs using attribute embeddings." In Proceedings of the AAAI Conference on Artificial Intelligence, vol. 33, no. 01, pp. 297-304. 2019.*
-* [Zhang et al. 2021] *Rui Zhang, Bayu Distiawan Trisedya, Miao Li, Yong Jiang and Jianzhong Qi. "A  Comprehensive  Survey  on  Knowledge  Graph  EntityAlignment via Representation Learning". In arXiv. 2021.*
+* [Zhang et al. 2021] *Rui Zhang, Bayu Distiawan Trisedya, Miao Li, Yong Jiang and Jianzhong Qi. "A  Comprehensive  Survey  on  Knowledge  Graph  EntityAlignment via Representation Learning". arXiv:2103.15059, https://arxiv.org/abs/2103.15059, 2021.*
 
 ```
 @inproceedings{trisedya2019entity,
@@ -68,7 +68,8 @@ If you use the datasets in the DWY-NB Benchmark, please credit us by citing the 
 @inproceedings{zhang2021survey,
   title={A  Comprehensive  Survey  on  Knowledge  Graph  EntityAlignment via Representation Learning},
   author={Rui Zhang and Bayu Distiawan Trisedya and Miao Li and Yong Jiang and Jianzhong Qi},
-  booktitle={arXiv},
+  booktitle={arXiv:2103.15059},
+  howpublished = "\url{https://arxiv.org/abs/2103.15059}",
   year={2021}
 }
 ```
