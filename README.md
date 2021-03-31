@@ -51,8 +51,8 @@ This repository contains the following contents:
 ## Citation
 If you use the datasets in the DWY-NB Benchmark, please credit us by citing the following papers:
 
-* [Trisedya et al. 2019] *Bayu Distiawan Trisedya, Jianzhong Qi, and Rui Zhang. "Entity alignment between knowledge graphs using attribute embeddings." In Proceedings of the AAAI Conference on Artificial Intelligence, vol. 33, no. 01, pp. 297-304. 2019.*
-* [Zhang et al. 2021] *Rui Zhang, Bayu Distiawan Trisedya, Miao Li, Yong Jiang and Jianzhong Qi. "A  Comprehensive  Survey  on  Knowledge  Graph  Entity Alignment via Representation Learning". arXiv preprint arXiv:2103.15059. 2021.*
+* [Trisedya et al. 2019] *Bayu Distiawan Trisedya, Jianzhong Qi, and Rui Zhang. "Entity alignment between knowledge graphs using attribute embeddings." In Proceedings of the AAAI Conference on Artificial Intelligence, vol. 33, no. 01, pp. 297-304 (2019).*
+* [Zhang et al. 2021] *Rui Zhang, Bayu Distiawan Trisedya, Miao Li, Yong Jiang and Jianzhong Qi. "A  Comprehensive  Survey  on  Knowledge  Graph  Entity Alignment via Representation Learning". arXiv preprint arXiv:2103.15059 (2021).*
 
 ```
 @inproceedings{trisedya2019entity,
