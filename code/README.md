@@ -33,14 +33,20 @@ code/
 
 
 ## Instructions for reproducing the experiments in the paper [[Zhang et al. 2021]](https://arxiv.org/abs/2103.15059)
-1. Download the EA technique code from the list above and the benchmark DYW-NB. Put the code and the data file in this folder. For example:
+0. You need to set up the environment for running the experiments. First, you can install Anaconda by following the instruction from  the website below:
+   <pre><code>https://docs.anaconda.com/anaconda/install/</code></pre>
+   Next, you can create a virtual environment using the following commands:
+   <pre><code>conda create -n kga python=3.7 anaconda
+   conda activate kga</code></pre>
+
+1. Download the EA technique code from the list above and the benchmark DYW-NB. For example:
    <pre><code>git clone https://github.com/1049451037/GCN-Align.git</code></pre>
 2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are stored in the form of triples `<subject, predicate, object>`. Some EA techniques require the input to be in different formats. To run their code, we need to convert the data from DWY-NB into the data formats required by those techniques. Use the following command to convert the dataset for those techniques.
    <pre><code>python convert_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
    for example:
    <b>python convert_data.py --seed 30 --dataset DY-NB</b></code></pre>
    
-   After converting the data, you can copy them to the folder "data" in the directory of the EA technique downloaded in step 1.
+   After converting the data, you can copy them to the folder "data" in the directory of the EA technique downloaded in step 1. Note that different EA techniques may use different names of the "data". Please refer to each EA technique's instruction.
    <pre><code>cp -r converted_data/ GCN-Align/data/</code></pre>
    
 3. To run `Experiment 1` in the paper, use the command for each technique provided by their respective instructions following the URLs given above.
