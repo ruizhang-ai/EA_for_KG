@@ -32,7 +32,7 @@ code/
 * NMN: https://github.com/StephanieWyt/NMN
 
 
-## Instructions to reproduce the experimental results in the paper [[Zhang et al. 2021]](https://arxiv.org/abs/2103.15059)
+## Instructions for reproducing the experiments in the paper [[Zhang et al. 2021]](https://arxiv.org/abs/2103.15059)
 1. Download the EA technique code from the list above and the benchmark DYW-NB. Put the code and the data file in this folder. For example:
    <pre><code>git clone https://github.com/1049451037/GCN-Align.git</code></pre>
 2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are stored in the form of triples `<subject, predicate, object>`. Some EA techniques require the input to be in different formats. To run their code, we need to convert the data from DWY-NB into the data formats required by those techniques. Use the following command to convert the dataset for those techniques.
