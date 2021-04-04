@@ -33,7 +33,7 @@ code/
 
 
 ## Instructions for reproducing the experiments in the paper [[Zhang et al. 2021]](https://arxiv.org/abs/2103.15059)
-0. You need to set up the environment for running the experiments. First, you can install Anaconda by following the instruction from  the website below:
+0. You need to set up the environment for running the experiments (Anaconda 3-2020.02 or above and Python 3.7 or above). First, you can install Anaconda by following the instruction from  the website below:
    <pre><code>https://docs.anaconda.com/anaconda/install/</code></pre>
    Next, you can create a virtual environment using the following commands:
    <pre><code>conda create -n kga python=3.7 anaconda
