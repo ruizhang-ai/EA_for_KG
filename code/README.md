@@ -11,7 +11,7 @@ code/
 └── experiment_3.py           --> (The code for running experiment 3 in the survey paper)
 ```
 
-## Below is the list the EA techniques compared in the experiments
+## Below is the list the EA techniques compared in the experimental study of the paper [[Zhang et al. 2021]](https://arxiv.org/abs/2103.15059)
 
 * MTransE: https://github.com/muhaochen/MTransE
 * ITransE: https://github.com/thunlp/IEAJKE
@@ -32,18 +32,18 @@ code/
 * NMN: https://github.com/StephanieWyt/NMN
 
 
-## Instruction to reproduce the experimental results in the paper [[Zhang et al. 2021]](https://arxiv.org/abs/2103.15059)
+## Instructions to reproduce the experimental results in the paper [[Zhang et al. 2021]](https://arxiv.org/abs/2103.15059)
 1. Download the EA technique code from the list above and the benchmark DYW-NB. Put the code and the data file in this folder. For example:
    <pre><code>git clone https://github.com/1049451037/GCN-Align.git</code></pre>
-2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are store in the form of triple `<subject, predicate, object>`. Some EA techniques require the input to be in different formats. To run their code, we need to convert the data from DWY-NB into the formats of those techniques. Use the following command to convert the dataset.
+2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are stored in the form of triples `<subject, predicate, object>`. Some EA techniques require the input to be in different formats. To run their code, we need to convert the data from DWY-NB into the data formats required by those techniques. Use the following command to convert the dataset for those techniques.
    <pre><code>python convert_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
    for example:
    <b>python convert_data.py --seed 30 --dataset DY-NB</b></code></pre>
    
-   After converting the data, you can copy them to the folder "data" in the directory of the EA technique downloaded in no 1.
+   After converting the data, you can copy them to the folder "data" in the directory of the EA technique downloaded in step 1.
    <pre><code>cp -r converted_data/ GCN-Align/data/</code></pre>
    
-3. To run `Experiment 1` in the paper, follow the command for each technique.
+3. To run `Experiment 1` in the paper, use the command for each technique provided by their respective instructions following the URLs given above.
    <pre><code>[Below is an example of running GCN-Align on our dataset]
    <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
 4. Before running `Experiment 2` and `Experiment 3`, you need to export the final embeddings for each technique. To do so, you can use the *save* function from numpy library as follows:
@@ -65,6 +65,6 @@ code/
      <pre><code>python experiment_3.py --seed [Seed Ratio] --dataset [Dataset Folder]
      for example:
      <b>python experiment_3.py --seed 30 --dataset DY-NB</b></code></pre>
-6. To run `Experiment 4` in the paper, follow the command for each technique.
+6. To run `Experiment 4` in the paper, use the command for each technique provided by their respective instructions following the URLs given above.
    <pre><code>[Below is the sample of running GCN-Align over our dataset]
    <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
