@@ -40,7 +40,8 @@ code/
    conda activate kga</code></pre>
 
 1. Download the EA technique code from the list above and the benchmark DYW-NB. For example:
-   <pre><code>git clone https://github.com/1049451037/GCN-Align.git</code></pre>
+   <pre><code>GCN-Align: git clone https://github.com/1049451037/GCN-Align.git</code>
+   <b><code>DYW-NB: git clone https://github.com/ruizhang-ai/EA_for_KG.git</code></pre>
 2. The datasets in DYW-NB benchmark contain a pair of KGs. For each KG, the data are stored in the form of triples `<subject, predicate, object>`. Some EA techniques require the input to be in different formats. To run their code, we need to convert the data from DWY-NB into the data formats required by those techniques. Use the following command to convert the dataset for those techniques.
    <pre><code>python convert_data.py --seed [Seed Ratio] --dataset [Dataset Folder]
    for example:
