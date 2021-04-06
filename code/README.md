@@ -52,7 +52,7 @@ code/
    
 3. To run `Experiment 1` in the paper, use the command for each technique provided by their respective instructions following the URLs given above.
    <pre><code>[Below is an example of running GCN-Align on our dataset]
-   <b>python train_kba.py --lang data --seed 4500</b></code></pre>
+   <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
 4. Before running `Experiment 2` and `Experiment 3`, you need to export the final embeddings for each EA technique. To do so, you can use the *save* function from numpy library as follows:
    <pre><code>[The sample below is from the file <b>train.py</b> in GCN-Align]
    ...
@@ -74,4 +74,4 @@ code/
      <b>python experiment_3.py --seed 30 --dataset DY-NB</b></code></pre>
 6. To run `Experiment 4` in the paper, use the command for each technique provided by their respective instructions following the URLs given above.
    <pre><code>[Below is the sample of running GCN-Align over our dataset]
-   <b>python train_kba.py --lang data --seed 4500</b></code></pre>
+   <b>python train_kba.py --lang converted_data --seed 4500</b></code></pre>
