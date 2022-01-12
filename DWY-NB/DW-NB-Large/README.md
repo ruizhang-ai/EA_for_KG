@@ -6,11 +6,11 @@ This dataset contains three KG pairs:
 1. DW-NB-100K
    - Number of aligned entities: 50,000
    - DBP KG contains: 
-     * Number of entity: 645,060 
-     * Number of predicates: 224 
+     * Number of entity: 100,416 
+     * Number of predicates: 185 
    - Wikidata KG contains:
-     * Number of entity: 610,645 
-     * Number of predicates: 209
+     * Number of entity: 109,363 
+     * Number of predicates: 159
 2. DW-NB-300K
    - Number of aligned entities: 150,000
    - DBP KG contains: 
