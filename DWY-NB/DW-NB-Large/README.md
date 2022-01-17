@@ -21,8 +21,8 @@ This dataset contains three KG pairs:
      * Number of triples: 1,023,324
    - Wikidata KG contains:
      * Number of entities: 303,514 
-     * Number of predicates: 185
-     * Number of triples: 1,167,329
+     * Number of predicates: 1,373
+     * Number of triples: 1,334,428
 3. DW-NB-600K
    - Number of aligned entities: 300,000
    - DBP KG contains: 
