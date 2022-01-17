@@ -31,5 +31,5 @@ This dataset contains three KG pairs:
      * Number of triples: 3,045,284
    - Wikidata KG contains:
      * Number of entities: 610,645 
-     * Number of predicates: 209
-     * Number of triples: 3,588,179
+     * Number of predicates: 1,913
+     * Number of triples: 3,761,780
