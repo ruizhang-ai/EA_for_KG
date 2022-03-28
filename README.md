@@ -64,7 +64,7 @@ If you use the datasets in the DWY-NB Benchmark, please credit us by citing the 
 }
 
 @inproceedings{zhang2021survey,
-  title={A  Benchmark and Comprehensive  Survey  on  Knowledge  Graph  EntityAlignment via Representation Learning},
+  title={A  Benchmark and Comprehensive  Survey  on  Knowledge  Graph  Entity Alignment via Representation Learning},
   author={Rui Zhang and Bayu Distiawan Trisedya and Miao Li and Yong Jiang and Jianzhong Qi},
   archivePrefix={arXiv preprint},
   eprint={arXiv:2103.15059}
